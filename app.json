@@ -1,0 +1,31 @@
+{
+  "name": "MADUSHAN-MD",
+  "description": "Javascript WhatsApp bot made by jaliya madushan rathnayaka",
+  "logo": "https://i.ibb.co/ZLpS9VJ/Whats-App-Image-2024-09-16-at-20-03-22-0e9cbb3d.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "ALIVE_IMG": {
+      "description": "Put your alive img here.",
+      "required": true
+    },
+    
+    "ALIVE_MSG": {
+      "description": "Put your alive msg here.",
+      "required": true
+    }   
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
